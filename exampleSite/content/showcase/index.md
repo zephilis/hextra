@@ -12,6 +12,40 @@ Open source projects powered by Hextra
 </p>
 
 {{< cards >}}
+  {{< card
+        link="https://github.com/modelcontextprotocol/specification"
+        title="Model Context Protocol Specification"
+        image="https://github.com/user-attachments/assets/1bb4f952-b8fc-43b5-9cbd-cd7213c2ba90"
+        imageStyle="object-fit:cover; aspect-ratio:16/9;"
+  >}}
+
+  {{< card
+        link="https://github.com/jonaspleyer/cellular_raza"
+        title="cellular_raza"
+        image="https://github.com/user-attachments/assets/f24c6455-b70a-419b-b025-e3d60101b673"
+        imageStyle="object-fit:cover; aspect-ratio:16/9;"
+  >}}
+
+  {{< card
+        link="https://github.com/mightymoud/sidekick"
+        title="Sidekick"
+        image="https://github.com/user-attachments/assets/4ae2a9d7-77b6-42eb-a9d7-5c4599f0f812"
+        imageStyle="object-fit:cover; aspect-ratio:16/9;"
+  >}}
+
+  {{< card
+        link="https://github.com/welding-torch/installc"
+        title="Install C"
+        image="https://github.com/user-attachments/assets/c9a85327-c7e7-40f1-830a-b4190a5e47bd"
+        imageStyle="object-fit:cover; aspect-ratio:16/9;"
+  >}}
+
+  {{< card
+        link="https://github.com/axivo/website"
+        title="AXIVO Docs"
+        image="https://github.com/imfing/hextra/assets/19806136/f22f0710-23a0-430b-8bad-616283b8a3e5"
+        imageStyle="object-fit:cover; aspect-ratio:16/9;"
+  >}}
 
   {{< card
         link="https://github.com/infracourse/web"
@@ -57,11 +91,11 @@ Open source projects powered by Hextra
         link="https://hoa.moe/"
         title="HITSZ OpenAuto"
         image="https://raw.githubusercontent.com/HITSZ-OpenAuto/hoa.moe/main/static/images/showcase-new.png"
-        imageStyle="object-fit:cover; aspect-ratio:16/9;" 
+        imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
 
   {{< card
-        link="https://lutheranconfessions.org/"
+        link="https://github.com/remysheppard/lutheran-confessions"
         title="LutheranConfessions"
         image="https://github.com/imfing/hextra/assets/5097752/ad6625e4-88cd-4cad-b102-5399997d0359"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"

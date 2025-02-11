@@ -3,6 +3,7 @@ baseURL: "https://example.com/"
 title: "Hextra"
 
 enableRobotsTXT: true
+# Parse Git commit
 enableGitInfo: true
 # enableEmoji: false
 hasCJKLanguage: true
@@ -22,17 +23,22 @@ languages:
     languageName: English
     weight: 1
     title: Hextra
-  zh-cn:
-    languageName: 简体中文
-    languageCode: zh-CN
-    weight: 2
-    title: Hextra
   fa:
     languageName: فارسی
     languageCode: fa
     languageDirection: rtl
-    weight: 3
+    weight: 2
     title: هگزترا
+  ja:
+    languageName: 日本語
+    languageCode: ja
+    weight: 3
+    title: Hextra
+  zh-cn:
+    languageName: 简体中文
+    languageCode: zh-CN
+    weight: 4
+    title: Hextra
 
 module:
   hugoVersion:
@@ -44,11 +50,17 @@ module:
     - path: github.com/imfing/hextra
 
 markup:
+  highlight:
+    noClasses: false
   goldmark:
     renderer:
       unsafe: true
-  highlight:
-    noClasses: false
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)']]
+        enable: true
 
 enableInlineShortcodes: true
 
@@ -124,6 +136,7 @@ params:
     displayPoweredBy: true
     width: normal
 
+  # Display the last modification date
   displayUpdatedDate: true
   dateFormat: "January 2, 2006"
 
@@ -151,6 +164,12 @@ params:
       sortBy: date
       sortOrder: desc # or "asc"
 
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
+
   comments:
     enable: false
     type: giscus
@@ -167,3 +186,4 @@ params:
       # emitMetadata: 0
       # inputPosition: top
       # lang: en
+      # theme: noborder_dark

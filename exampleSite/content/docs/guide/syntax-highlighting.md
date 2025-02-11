@@ -40,6 +40,24 @@ def say_hello():
     print("Hello!")
 ```
 
+### Link to File
+
+{{< new-feature version="v0.9.2" >}}
+
+You can use the `base_url` attribute to provide a base URL that will be combined with the file name to generate a link.
+
+The file name can include a relative path if it specifies the file's location within the base path.
+
+````markdown {filename="Markdown"}
+```go {base_url="https://github.com/imfing/hextra/blob/main/",filename="exampleSite/hugo.work"}
+go 1.20
+```
+````
+
+```go {base_url="https://github.com/imfing/hextra/blob/main/",filename="exampleSite/hugo.work"}
+go 1.20
+```
+
 ### Line Numbers
 
 To set line numbers, set attribute `linenos` to `table` and optionally set `linenostart` to the starting line number:
@@ -78,11 +96,18 @@ def main():
     say_hello()
 ```
 
-
 ### Copy Button
 
-By default, copy button is enabled for code blocks.
+By default, copy button is enabled for code blocks. Its behavior can changed by modifying the site configuration file:
 
+```yaml {linenos=table,linenostart=42,filename="hugo.yaml"}
+params:
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
+```
 
 ## Supported Languages
 
